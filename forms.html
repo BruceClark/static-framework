@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Page Title &mdash; Site Name</title>
+
+	<meta charset="utf-8"/>
+	<meta name="description" content=""/>
+
+	<!-- Stylesheets -->	
+	<link href="/css/screen.css" media="screen" rel="Stylesheet"/>
+	<link href="/css/print.css" media="print" rel="Stylesheet"/>
+
+	<!-- Shortcut Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" type="image/png"/>
+
+	<!-- RSS Feed -->
+	<link rel="alternate" title="RSS Feed" href="/rss" type="application/rss+xml"/>
+
+	<!-- Scripts -->
+	<script src="/scripts/jquery-1.5.min.js"></script>
+	<script src="/scripts/jquery.cookie.js"></script>
+	<script src="/scripts/jquery.cycle.all.min.js"></script>
+	<script src="/scripts/jquery.query.js"></script>
+	<script src="/scripts/swfobject.js"></script>
+	<script src="/scripts/imulus-global.js"></script>
+
+	<!-- IE Requests -->
+	<!--[if lte IE 6]><script src="/scripts/dropdown.js"></script><![endif]-->
+	<!--[if lte IE 7]><link href="/css/ie.css" media="screen" rel="Stylesheet"/><![endif]-->
+
+	<!-- Google Analytics -->
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', '']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body class="home">
+	<div id="header" class="autoclear">
+		<strong><a href="/" title="Sample Page">Site Title</a></strong>
+
+		<div id="search">
+			<input id="search-text" type="text" name="q" placeholder="Search"/>
+			<input id="search-btn" type="image" src="/images/icons/search.png" alt="Search"/>
+		</div><!-- end search -->
+
+		<div id="nav">
+			<ul>
+				<li><a href="/">Item 1</a></li>
+				<li><a href="/">Item 2</a></li>
+				<li><a href="/">Item 3</a></li>
+				<li><a href="/">Item 4</a></li>
+				<li><a href="/">Item 5</a></li>
+			</ul>
+		</div><!-- end nav -->
+	</div><!-- end header -->
+
+	<div id="content" class="autoclear">
+		<div id="main">
+			<h1>Heading Level One</h1>
+
+			<form>
+				<fieldset>
+					<legend>Sign up for a new account</legend>
+					<p>
+						<label class="outer" for="first-name">First Name <sup>*</sup></label> 
+						<input name="first-name" id="first-name" type="text" class="text" />
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer" for="last-name">Last Name <sup>*</sup></label> 
+						<input name="last-name" id="last-name" type="text" class="text" />
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer" for="company">Company <sup>*</sup></label> 
+						<input name="company" id="company" type="text" />
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer" for="title">Title <sup>*</sup></label>
+						<input name="title" id="title" type="text" class="small"/>
+						<label class="inner">Hello</label>
+						<input name="title" id="title" type="text" class="small"/>
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer" for="email-address">Email Address <sup>*</sup></label>
+						<input name="email-address" id="email-address" type="text" />
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer" for="phone-number">Phone Number</label>
+						<input name="phone-number" id="phone-number" type="text" />
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer" for="dropdown">Dropdown</label>
+						<select id="dropdown" name="dropdown">
+							<option value="1">Ottawa</option>
+							<option value="2">Calgary</option>
+							<option value="3">Moosejaw</option>
+						</select>
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer" for="radio-example">Radio buttons</label>
+						<span class="radcheck"><input type="radio" name="radio-example-1" id="radio-example-1"/> 
+								<label for="radio-example-1">Radio one</label></span>
+						<span class="radcheck"><input type="radio" name="radio-example-2"/> 
+								<label for="radio-example-2">Radio two</label></span>
+						<span class="radcheck"><input type="radio" name="radio-example-3"/> 
+								<label for="radio-example-3">Radio three</label></span>
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer" for="checkbox-example">Checkboxes</label>
+						<span class="radcheck"><input type="checkbox" name="checkbox-example"/> Checkbox one</span>
+						<span class="radcheck"><input type="checkbox" name="checkbox-example"/> Checkbox two</span>
+						<span class="radcheck"><input type="checkbox" name="checkbox-example"/> Checkbox three</span>
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer" for="comments">Comments</label>
+						<textarea name="comments" id="comments"></textarea>
+						<span class="error" style="">Required Field</span>
+					</p>
+
+					<p>
+						<label class="outer">&nbsp;</label> 
+						<input type="submit" value="Submit" class="submit" />
+						<em class="info"><a href="/reset-password">Forgot your information?</a></em>
+					</p>
+
+					<p>
+						<label class="outer">&nbsp;</label> 
+						<input type="image" class="submit-button" src="/images/buttons/submit.gif" />
+						<em class="info">* denotes a required field</em>
+					</p>
+				</fieldset>
+			</form>
+		</div><!-- end main -->
+
+	</div><!-- end content -->
+
+	<div id="footer" class="autoclear">
+		<p class="copyright">Copyright &copy; 2010 Company Name</p>
+		<ul>
+			<li><a href="/">Item 1</a></li>
+			<li><a href="/">Item 2</a></li>
+			<li><a href="/">Item 3</a></li>
+			<li><a href="/">Item 4</a></li>
+			<li><a href="/">Item 5</a></li>
+		</ul>
+	</div><!-- end footer -->
+	
+</body>
+</html>
