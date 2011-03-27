@@ -7,7 +7,7 @@
 	<meta charset="utf-8"/>
 	<meta name="description" content=""/>
 
-	<!-- Stylesheets -->	
+	<!-- Stylesheets -->
 	<link href="/css/screen.css" media="screen" rel="Stylesheet"/>
 	<link href="/css/print.css" media="print" rel="Stylesheet"/>
 
@@ -19,23 +19,24 @@
 	<link rel="alternate" title="RSS Feed" href="/rss" type="application/rss+xml"/>
 
 	<!-- jQuery -->
-	<script src="/scripts/jquery/jquery.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='/scripts/jquery/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+	<!-- jQuery Plugins -->
 	<script src="/scripts/jquery/plugins/jquery.cookie.js"></script>
 	<script src="/scripts/jquery/plugins/jquery.cycle.all.min.js"></script>
 	<script src="/scripts/jquery/plugins/jquery.query.js"></script>
 
+	<!-- SWFObject -->
 	<script src="/scripts/library/swfobject.js"></script>
 
-	<!-- Global JS -->
+	<!-- Imulus JS -->
 	<script src="/scripts/imulus.namespace.js"></script>
 	<script src="/scripts/imulus.library.js"></script>
-	<script src="/scripts/imulus.interface.js"></script>	
+	<script src="/scripts/imulus.interface.js"></script>
 	<script src="/scripts/init.js"></script>
 
-	
-
 	<!-- IE Requests -->
-	<!--[if lte IE 6]><script src="/scripts/dropdown.js"></script><![endif]-->
 	<!--[if lte IE 7]><link href="/css/ie.css" media="screen" rel="Stylesheet"/><![endif]-->
 
 	<!-- Google Analytics -->
@@ -74,7 +75,6 @@
 
 	<div id="content" class="autoclear">
 		<div id="main">
-
 			<h1>Fusce lacinia metus non purus</h1>
 			<p>Morbi rhoncus adipiscing libero, <strong>sed varius nunc pellentesque eu</strong>. Quisque sit amet molestie leo. <a href="#">Integer et ultricies turpis</a>. Ut pellentesque nisi vel nisi cursus sed lacinia mauris lacinia. Fusce ultrices, <em>nulla non hendrerit semper</em>, velit enim gravida magna, sed lacinia dolor nisi molestie ipsum. Sed ligula purus, sagittis a euismod congue, tempor vel arcu.</p>
 
@@ -98,10 +98,10 @@
 
 			<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent ultrices, metus ac molestie venenatis, elit erat suscipit ante, at dictum nulla augue ut lorem.</p>
 			<pre><code>
-				#header h1 a { 
+				#header h1 a {
 					display: block;
-					width: 300px; 
-					height: 80px; 
+					width: 300px;
+					height: 80px;
 				}
 			</code></pre>
 
@@ -176,6 +176,6 @@
 			<li><a href="/">Item 5</a></li>
 		</ul>
 	</div><!-- end footer -->
-	
+
 </body>
 </html>

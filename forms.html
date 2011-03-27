@@ -2,12 +2,12 @@
 
 <html lang="en">
 <head>
-	<title>Page Title &mdash; Site Name</title>
+	<title>Page Title Here &mdash; Site Name</title>
 
 	<meta charset="utf-8"/>
 	<meta name="description" content=""/>
 
-	<!-- Stylesheets -->	
+	<!-- Stylesheets -->
 	<link href="/css/screen.css" media="screen" rel="Stylesheet"/>
 	<link href="/css/print.css" media="print" rel="Stylesheet"/>
 
@@ -18,16 +18,25 @@
 	<!-- RSS Feed -->
 	<link rel="alternate" title="RSS Feed" href="/rss" type="application/rss+xml"/>
 
-	<!-- Scripts -->
-	<script src="/scripts/jquery-1.5.min.js"></script>
-	<script src="/scripts/jquery.cookie.js"></script>
-	<script src="/scripts/jquery.cycle.all.min.js"></script>
-	<script src="/scripts/jquery.query.js"></script>
-	<script src="/scripts/swfobject.js"></script>
-	<script src="/scripts/imulus-global.js"></script>
+	<!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='/scripts/jquery/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+	<!-- jQuery Plugins -->
+	<script src="/scripts/jquery/plugins/jquery.cookie.js"></script>
+	<script src="/scripts/jquery/plugins/jquery.cycle.all.min.js"></script>
+	<script src="/scripts/jquery/plugins/jquery.query.js"></script>
+
+	<!-- SWFObject -->
+	<script src="/scripts/library/swfobject.js"></script>
+
+	<!-- Imulus JS -->
+	<script src="/scripts/imulus.namespace.js"></script>
+	<script src="/scripts/imulus.library.js"></script>
+	<script src="/scripts/imulus.interface.js"></script>
+	<script src="/scripts/init.js"></script>
 
 	<!-- IE Requests -->
-	<!--[if lte IE 6]><script src="/scripts/dropdown.js"></script><![endif]-->
 	<!--[if lte IE 7]><link href="/css/ie.css" media="screen" rel="Stylesheet"/><![endif]-->
 
 	<!-- Google Analytics -->
@@ -67,7 +76,6 @@
 	<div id="content" class="autoclear">
 		<div id="main">
 			<h1>Heading Level One</h1>
-
 			<form>
 				<fieldset>
 					<legend>Sign up for a new account</legend>
@@ -171,6 +179,6 @@
 			<li><a href="/">Item 5</a></li>
 		</ul>
 	</div><!-- end footer -->
-	
+
 </body>
 </html>
